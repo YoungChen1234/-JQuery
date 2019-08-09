@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/* CSS Document */
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, li, ol, td, form, input, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333; }
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #666;
+  background: white; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  vertical-align: top;
+  display: block;
+  border: none; }
+
+a, input {
+  outline: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+table {
+  border-collapse: collapse; }
+
+.border0 {
+  border: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*头部样式*/
+#docHead {
+  heiht: 100px;
+  border-bottom: 1px solid #e8e8ea;
+  background: #fff;
+  position: relative;
+  z-index: 100; }
+  #docHead #docHeadWrap {
+    height: 100px;
+    width: 1000px;
+    margin: 0 auto;
+    zoom: 1;
+    position: relative;
+    /* 考拉logo样式*/ }
+    #docHead #docHeadWrap .logokaola {
+      position: absolute;
+      background: url(../images/nav1.png);
+      left: 0px;
+      top: 20px;
+      width: 330px;
+      height: 65px;
+      cursor: pointer;
+      background-repeat: no-repeat;
+      z-index: 9;
+      background-position: left center; }
+    #docHead #docHeadWrap #topimg {
+      position: absolute;
+      top: 0px;
+      left: 458px;
+      background: url(../images/nav2.png) no-repeat;
+      height: 100px;
+      width: 504px;
+      left: 458px; }
+
+/*界面主体部分*/
+.login-banner {
+  background: #f8f8f8; }
+  .login-banner .login-body {
+    width: 1000px;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+    /* 登陆注册部分 */ }
+    .login-banner .login-body .default-img {
+      position: absolute;
+      background: url(../images/denglu.png);
+      left: 10px;
+      top: 100px;
+      width: 400px;
+      height: 203px;
+      display: inline-block;
+      border: 0px;
+      vertical-algin: middle; }
+    .login-banner .login-body .hot-area {
+      position: absolute;
+      top: 109px;
+      left: 10px;
+      width: 400px;
+      height: 280px; }
+    .login-banner .login-body #loginwrap {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      right: 40px;
+      width: 350px;
+      height: 366px;
+      font-size: 12px;
+      transform: translateY(-50%);
+      border: 1px solid #eaeaea;
+      background-color: #fff; }
+      .login-banner .login-body #loginwrap #loginNum {
+        border: none;
+        /*对应表单部分 */ }
+        .login-banner .login-body #loginwrap #loginNum .top {
+          height: 52px;
+          width: 348px;
+          font-size: 16px;
+          color: #333;
+          line-height: 52px;
+          border-bottom: 1px solid #ddd;
+          position: relative;
+          background: #f8f8f8;
+          /*active为鼠标移入时的class名 */ }
+          .login-banner .login-body #loginwrap #loginNum .top .active {
+            color: #e31436; }
+          .login-banner .login-body #loginwrap #loginNum .top #top_1 {
+            float: left;
+            width: 174px;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center; }
+          .login-banner .login-body #loginwrap #loginNum .top .line {
+            position: absolute;
+            top: 17px;
+            left: 175px;
+            width: 0px;
+            height: 20px;
+            border-right: 1px solid #ddd; }
+          .login-banner .login-body #loginwrap #loginNum .top .top_2 {
+            float: left;
+            width: 174px;
+            font-weight: 700;
+            cursor: pointer;
+            text-align: center; }
+        .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox {
+          height: 245px;
+          background-color: #fff;
+          padding: 20px 40px 15px; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxTop {
+            padding: 0 0 25px 0; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxTop span, .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxTop a {
+              float: right; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #iconMima {
+            font-size: 12px; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxNum {
+            width: 270px;
+            height: 35px;
+            border: 1px solid #c5cddb;
+            font-size: 14px;
+            background: #fff; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxNum span {
+              padding: 0 11px 0 11px; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxNum input {
+              height: 30px;
+              line-height: 30px;
+              font-size: 14px;
+              border: none; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxPassword {
+            background: #fff;
+            width: 270px;
+            height: 35px;
+            border: 1px solid #c5cddb;
+            font-size: 14px;
+            margin-top: 15px;
+            /*span{
+    									display:inline-block;
+    								    height: 34px;
+    									width: 96px;
+   								    	line-height: 32px;
+    									background-color: #eee;
+					    				color: #333;
+					    				border-left: 1px solid #d5d5d5;
+    							}
+    							*/ }
+            .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxPassword input {
+              width: 138px;
+              height: 30px;
+              line-height: 30px;
+              font-size: 14px;
+              border: none;
+              padding-left: 8px; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxLogin a {
+            display: block;
+            width: 270px;
+            margin-top: 30px;
+            height: 36px;
+            background-color: #E31436;
+            color: #fff;
+            border-radius: 2px;
+            line-height: 36px;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxBottom {
+            margin-top: 10px;
+            width: 270px;
+            height: 31px; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxBottom span, .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxBottom lable {
+              float: left; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputHead .inputBox #inputBoxBottom a {
+              float: right; }
+        .login-banner .login-body #loginwrap #loginNum #loginInputBody {
+          margin-left: 40px; }
+        .login-banner .login-body #loginwrap #loginNum #loginInputFooter {
+          padding: 10px 40px;
+          width: 348px;
+          height: 41px;
+          font-size: 14px;
+          border-top: 1px solid #ddd;
+          background-color: #f8f8f8;
+          margin-top: 10px; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputFooter ul li {
+            display: block;
+            position: relative;
+            float: left;
+            margin-right: 10px;
+            width: 22px;
+            height: 22px; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputFooter ul li .icon-weixin {
+              color: #92bc83; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputFooter ul li .icon-zhifubao {
+              color: #79bdd7; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputFooter ul li .icon-weibo {
+              color: #eba265; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputFooter ul li .icon-QQ {
+              color: #87a9de; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputFooter ul li a {
+            font-size: 22px; }
+          .login-banner .login-body #loginwrap #loginNum #loginInputFooter .loginBottomA {
+            display: block;
+            float: right;
+            width: 105px;
+            line-height: 22px;
+            cursor: pointer;
+            color: #e31436; }
+            .login-banner .login-body #loginwrap #loginNum #loginInputFooter .loginBottomA span {
+              padding: 3px 0 0 0; }
+
+/*底部*/
+.common-footer {
+  margin-top: 40px;
+  margin-bottom: 100px;
+  font-size: 14px;
+  text-algin: center;
+  color: #666; }
+  .common-footer #aboutNEST {
+    position: relative;
+    padding: 0px;
+    line-height: 26px;
+    text-algin: center;
+    color: #666;
+    background: #fff;
+    width: 1000px;
+    height: 115px;
+    margin: 0 auto; }
+    .common-footer #aboutNEST a {
+      color: #666;
+      cursor: pointer;
+      font-family: "Helvetica Neue";
+      font-size: 14px; }
+    .common-footer #aboutNEST span {
+      margin: 0 20px; }
+    .common-footer #aboutNEST #KXYZ {
+      margin: 0px; }
+      .common-footer #aboutNEST #KXYZ img {
+        margin-top: 5px;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px; }
+    .common-footer #aboutNEST .m-license {
+      font-size: 12px;
+      color: #999; }
+    .common-footer #aboutNEST .f-tac {
+      text-algin: center; }
+      .common-footer #aboutNEST .f-tac #KXYZ {
+        position: relative; }
+        .common-footer #aboutNEST .f-tac #KXYZ #kx_verify {
+          position: absolute;
+          left: 420px; }
+      .common-footer #aboutNEST .f-tac .u-shield {
+        position: absolute;
+        left: 500px; }
+        .common-footer #aboutNEST .f-tac .u-shield img {
+          margin: 5px 0 0 10px;
+          height: 30px; }
+  .common-footer #zgwab {
+    position: absolute;
+    z-index: 3;
+    left: 30px;
+    top: 57px; }

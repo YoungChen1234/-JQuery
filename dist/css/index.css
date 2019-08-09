@@ -1,0 +1,709 @@
+@charset "UTF-8";
+/* CSS Document */
+body, h1, h3, h2, h4, h5, h6, p, dl, dd, ul, li, ol, td, form, input, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333; }
+
+body {
+  font-size: 14px;
+  font-family: "微软雅黑";
+  color: #666;
+  background: white; }
+
+* {
+  box-sizing: border-box; }
+
+img {
+  vertical-align: top;
+  display: block;
+  border: none; }
+
+a, input {
+  outline: none; }
+
+em, i {
+  font-style: normal; }
+
+b, strong, h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+table {
+  border-collapse: collapse; }
+
+.border0 {
+  border: none; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/* nav部分 */
+#topNav {
+  position: relative;
+  z-index: 106;
+  background: #000;
+  border-bottom: 1px solid #ededee;
+  color: #999999; }
+  #topNav #topNavWrap {
+    position: relative;
+    zoom: 1;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 1090px;
+    font-size: 12px; }
+    #topNav #topNavWrap #topNavLeft {
+      float: left; }
+      #topNav #topNavWrap #topNavLeft a {
+        color: #999999; }
+      #topNav #topNavWrap #topNavLeft #login {
+        margin-left: 16px; }
+      #topNav #topNavWrap #topNavLeft .sep {
+        padding: 0 10px; }
+    #topNav #topNavWrap #topNavLeft2 {
+      float: left;
+      padding-left: 30px; }
+      #topNav #topNavWrap #topNavLeft2 a {
+        color: #999999; }
+    #topNav #topNavWrap #topNavRight {
+      float: right;
+      position: relative;
+      right: -3px; }
+      #topNav #topNavWrap #topNavRight li {
+        float: left; }
+        #topNav #topNavWrap #topNavRight li a {
+          color: #999999; }
+        #topNav #topNavWrap #topNavRight li .navFirstA {
+          padding: 0 14px 0 8px; }
+        #topNav #topNavWrap #topNavRight li .navSecondA {
+          padding: 0 14px 0 8px; }
+        #topNav #topNavWrap #topNavRight li .navThreeA {
+          padding: 0 24px 0 16px; }
+        #topNav #topNavWrap #topNavRight li .navFourA {
+          padding: 0 14px 0 8px; }
+        #topNav #topNavWrap #topNavRight li .navFiveA {
+          padding: 0 14px 0 8px; }
+        #topNav #topNavWrap #topNavRight li .navSixA {
+          padding: 0 14px 0 8px; }
+        #topNav #topNavWrap #topNavRight li .navLastA {
+          padding: 0 14px 0 8px; }
+
+/* head部分*/
+#docHead {
+  position: relative;
+  height: 100px;
+  background: #fff; }
+  #docHead #docHeadWrap {
+    position: relative;
+    height: 100px;
+    zoom: 1;
+    width: 1090px;
+    margin: 0 auto; }
+    #docHead #docHeadWrap .logokaola {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      width: 330px;
+      height: 65px;
+      line-height: 65px;
+      outline: none;
+      cursor: pointer;
+      z-index: 9;
+      background-repeat: no-repeat;
+      background-position: 0;
+      background-image: url(../images/nav1.png); }
+    #docHead #docHeadWrap .headSearchBox {
+      position: absolute;
+      left: 343px;
+      top: 24px;
+      z-index: 73; }
+      #docHead #docHeadWrap .headSearchBox .topSearchBox .topSearch {
+        width: 510px;
+        height: 40px;
+        padding-left: 1px;
+        background-color: #ff2337;
+        border-radius: 40px; }
+        #docHead #docHeadWrap .headSearchBox .topSearchBox .topSearch .wrap {
+          float: left;
+          margin: 2px 1px;
+          padding: 6px 39px 6px 30px;
+          background-color: #fff;
+          border-radius: 24px 0 0 24px;
+          white-space: normal;
+          word-wrap: break-word; }
+          #docHead #docHeadWrap .headSearchBox .topSearchBox .topSearch .wrap .icon-sousuo {
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            left: 7px;
+            top: 6px;
+            font-size: 26px; }
+          #docHead #docHeadWrap .headSearchBox .topSearchBox .topSearch .wrap input {
+            display: inline-block;
+            width: 410px;
+            height: 24px;
+            line-height: 24px;
+            border: 0;
+            font-family: Helvetica,arial;
+            font-size: 13px;
+            vertical-align: middle; }
+        #docHead #docHeadWrap .headSearchBox .topSearchBox .topSearch .topSearchBackgroundBox {
+          width: 60px;
+          height: 40px;
+          background: #ff2337;
+          border-radius: 40px;
+          position: absolute;
+          top: 0px;
+          right: 0px; }
+          #docHead #docHeadWrap .headSearchBox .topSearchBox .topSearch .topSearchBackgroundBox .iconfangdajing {
+            display: inline-block;
+            height: 40px;
+            width: 50px;
+            font-size: 19px;
+            line-height: 40px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: -7px;
+            background: url(../images/fdj.png) no-repeat; }
+      #docHead #docHeadWrap .headSearchBox #suggestList {
+        line-height: 22px;
+        margin-top: 2px;
+        width: 461px;
+        height: 22px;
+        overflow: hidden; }
+        #docHead #docHeadWrap .headSearchBox #suggestList li {
+          float: left;
+          white-space: nowrap;
+          margin-left: 30px; }
+          #docHead #docHeadWrap .headSearchBox #suggestList li .RedHerf {
+            color: #ff1e32; }
+          #docHead #docHeadWrap .headSearchBox #suggestList li a {
+            color: #999;
+            line-height: 22px; }
+    #docHead #docHeadWrap .shopcartBox {
+      display: block;
+      position: absolute;
+      right: 76px;
+      top: 26px;
+      width: 106px;
+      height: 38px;
+      background-color: #fff;
+      line-height: 36px;
+      font-size: 14px;
+      text-align: center;
+      -moz-border-radius: 36px;
+      -webkit-border-radius: 36px;
+      border-radius: 36px;
+      border: 2px solid #ff1e32; }
+      #docHead #docHeadWrap .shopcartBox i {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+        margin-bottom: -5px;
+        background: url("../images/1 (8).png"); }
+      #docHead #docHeadWrap .shopcartBox .shopcart {
+        display: inline-block;
+        padding-left: 6px;
+        background: none;
+        vertical-align: middle;
+        white-space: normal;
+        word-wrap: break-word; }
+        #docHead #docHeadWrap .shopcartBox .shopcart .num {
+          zoom: 1;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+          font-weight: 400;
+          color: #fff;
+          background: #ff1e32;
+          white-space: nowrap;
+          font-family: Helvetica,arial;
+          margin-left: 3px; }
+
+/* tabnav*/
+#topNavBox {
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  z-index: 102; }
+  #topNavBox #topTap {
+    zoom: 1;
+    width: 1090px;
+    margin: 0 auto;
+    line-height: 40px;
+    z-index: 102;
+    position: relative;
+    height: 40px; }
+    #topNavBox #topTap #topCats {
+      float: left;
+      height: 40px;
+      width: 164px;
+      background: -webkit-linear-gradient(90deg, red, #ff3264);
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+      padding-left: 0;
+      overflow: visible; }
+      #topNavBox #topTap #topCats #toplevel {
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        width: 164px;
+        border-bottom: 1px solid #ff5160; }
+      #topNavBox #topTap #topCats .classlist {
+        background: red; }
+        #topNavBox #topTap #topCats .classlist li {
+          display: inline-block;
+          height: 40px;
+          line-height: 40px;
+          background: red;
+          border-bottom: 1px solid #ff5160;
+          padding-left: 10px;
+          width: 151px;
+          cursor: pointer;
+          background: -webkit-linear-gradient(90deg, red, #ff3264);
+          padding-right: 3px; }
+    #topNavBox #topTap #functab {
+      z-index: 72;
+      float: left;
+      padding-left: 25px;
+      position: relative;
+      height: 40px;
+      width: 880px; }
+      #topNavBox #topTap #functab li {
+        float: left;
+        height: 40px;
+        overflow: hidden;
+        padding: 0 20px; }
+        #topNavBox #topTap #functab li a {
+          display: block;
+          text-align: center;
+          font-size: 15px;
+          font-weight: 700; }
+
+/* banner部分*/
+#bannerbox {
+  minheight: 505px;
+  position: relative;
+  zoom: 1; }
+  #bannerbox #imgBox {
+    overflow: hidden;
+    height: 505px; }
+    #bannerbox #imgBox ul {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 400px;
+      margin-left: -960px; }
+      #bannerbox #imgBox ul li {
+        position: absolute; }
+        #bannerbox #imgBox ul li a img {
+          height: 505px;
+          width: 1920px; }
+  #bannerbox .sellpoint {
+    position: relative;
+    z-index: 12;
+    margin-top: -45px;
+    margin-bottom: 20px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.3); }
+    #bannerbox .sellpoint .contentwrap {
+      width: 1090px;
+      margin: 0 auto; }
+      #bannerbox .sellpoint .contentwrap ul {
+        float: left;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+        color: #fff; }
+        #bannerbox .sellpoint .contentwrap ul li {
+          float: left; }
+          #bannerbox .sellpoint .contentwrap ul li i {
+            margin-right: 7px; }
+          #bannerbox .sellpoint .contentwrap ul li #firsti {
+            vertical-align: -2px; }
+          #bannerbox .sellpoint .contentwrap ul li #secondi {
+            vertical-align: -2px; }
+          #bannerbox .sellpoint .contentwrap ul li a {
+            color: #fff;
+            margin-right: 40px; }
+      #bannerbox .sellpoint .contentwrap .newBie {
+        float: right;
+        height: 44px;
+        line-height: 44px;
+        font-size: 12px;
+        color: #fff; }
+        #bannerbox .sellpoint .contentwrap .newBie a {
+          color: #fff; }
+        #bannerbox .sellpoint .contentwrap .newBie i {
+          margin-right: 5px;
+          font-size: 15px; }
+
+/*新人专区*/
+#newPeople .item .itemBox {
+  position: relative; }
+  #newPeople .item .itemBox #indexleftList {
+    width: 90px;
+    height: 588px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #fff; }
+    #newPeople .item .itemBox #indexleftList img {
+      display: inline-block;
+      width: 90px;
+      height: 49px; }
+    #newPeople .item .itemBox #indexleftList .channel {
+      border: 1px solid #eaeaea; }
+      #newPeople .item .itemBox #indexleftList .channel li a {
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 9px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid #eaeaea; }
+    #newPeople .item .itemBox #indexleftList .floor {
+      border: 1px solid #eaeaea;
+      border-top: none;
+      padding: 10px 0; }
+      #newPeople .item .itemBox #indexleftList .floor li a {
+        display: block;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 9px;
+        font-size: 12px;
+        color: #999; }
+    #newPeople .item .itemBox #indexleftList .leftLasta {
+      display: block; }
+      #newPeople .item .itemBox #indexleftList .leftLasta img {
+        height: 100%; }
+  #newPeople .item .itemBox .newImgbox {
+    width: 1100px;
+    height: 332px;
+    margin: 0 auto;
+    background: green; }
+    #newPeople .item .itemBox .newImgbox .newFirstli {
+      margin-left: 0px; }
+    #newPeople .item .itemBox .newImgbox li {
+      float: left;
+      margin-left: 20px; }
+      #newPeople .item .itemBox .newImgbox li a {
+        display: inline-block;
+        cursor: pointer;
+        width: 238px;
+        height: 300px;
+        background: yellow; }
+
+#newPeople .item #indexrightList {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: 1px solid #eaeaea; }
+  #newPeople .item #indexrightList .rightListicon {
+    width: 62px;
+    height: 243px; }
+    #newPeople .item #indexrightList .rightListicon li a {
+      display: block;
+      width: 61px;
+      height: 61px;
+      padding: 12px 0 0;
+      border-bottom: 1px solid #eaeaea;
+      background: #fff;
+      font-size: 12px;
+      cursor: pointer;
+      text-align: center; }
+      #newPeople .item #indexrightList .rightListicon li a i {
+        display: block;
+        width: 20px;
+        height: 20px;
+        margin-left: 20px;
+        padding: 2px 0px; }
+
+/*限时购*/
+#timeLimit {
+  margin-top: 40px; }
+  #timeLimit .timelimitBox {
+    background: red; }
+    #timeLimit .timelimitBox article {
+      width: 1100px;
+      margin: 0 auto;
+      background: yellow; }
+      #timeLimit .timelimitBox article h2 {
+        height: 74px;
+        padding-top: 25px;
+        border-top: 1px solid #e9e9e9;
+        background: green; }
+        #timeLimit .timelimitBox article h2 .big {
+          margin-right: 10px; }
+        #timeLimit .timelimitBox article h2 i {
+          font-size: 16px; }
+        #timeLimit .timelimitBox article h2 .more {
+          position: absolute;
+          right: 84px;
+          color: #999; }
+      #timeLimit .timelimitBox article .commodityicon {
+        border-top: 1px solid #eaeaea;
+        margin-right: -1px;
+        background: purple; }
+        #timeLimit .timelimitBox article .commodityicon .goodslist {
+          float: left;
+          width: 840px;
+          border-left: 1px solid #eaeaea; }
+          #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle {
+            position: relative;
+            float: left;
+            width: 419px;
+            height: 189px;
+            border-right: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+            background-color: #fff; }
+            #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .goodsicon {
+              display: inline-block;
+              position: relative;
+              float: left;
+              margin-right: -188px;
+              width: 188px;
+              height: 188px; }
+              #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .goodsicon .goodsimg {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background: pink; }
+            #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail {
+              position: relative;
+              float: right;
+              margin-right: 15px;
+              width: 205px;
+              height: 188px; }
+              #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .intro {
+                margin: 16px 0 6px;
+                height: 21px;
+                overflow: hidden;
+                white-space: nowrap;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis; }
+                #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .intro a {
+                  color: #333;
+                  font-size: 16px;
+                  font-weight: 700; }
+              #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .shortTitle {
+                overflow: hidden;
+                height: 40px;
+                word-break: break-all;
+                word-wrap: break-word; }
+                #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .shortTitle a {
+                  line-height: 16px;
+                  overflow: hidden;
+                  font-size: 12px;
+                  color: #999; }
+              #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .price {
+                margin: 0 0 33px;
+                font-size: 20px;
+                font-weight: 700;
+                color: #ff1e32; }
+                #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .price b {
+                  font-size: 20px;
+                  font-weight: 400; }
+                #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .price span {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #999;
+                  margin-left: 8px; }
+                #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .price del {
+                  font-size: 14px;
+                  font-weight: 400;
+                  color: #999; }
+              #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .progresslimit {
+                width: 100px;
+                height: 18px;
+                line-height: 18px;
+                background-color: #fff;
+                margin-top: -3px;
+                border: none;
+                font-size: 14px;
+                color: #ff1e32; }
+              #timeLimit .timelimitBox article .commodityicon .goodslist .goodsarticle .detail .f-hover {
+                display: inline-block;
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                width: 80px;
+                height: 36px;
+                line-height: 36px;
+                border: 1px solid #ff1e32;
+                text-align: center;
+                font-size: 14px;
+                color: #ff1e32;
+                text-decoration: none;
+                -webkit-border-radius: 36px;
+                -moz-border-radius: 36px;
+                border-radius: 36px; }
+        #timeLimit .timelimitBox article .commodityicon .aside {
+          float: right;
+          width: 260px;
+          height: 380px; }
+          #timeLimit .timelimitBox article .commodityicon .aside .pic {
+            display: inline-block; }
+            #timeLimit .timelimitBox article .commodityicon .aside .pic img {
+              width: 260px;
+              height: 380px;
+              position: relative;
+              left: -1px;
+              background: red; }
+
+/*底部*/
+#docFoot .footBigWrap {
+  background: #fff;
+  border-top: 1px solid #eaeaea; }
+  #docFoot .footBigWrap .box {
+    width: 1100px;
+    margin: 0 auto;
+    background: transparent;
+    text-align: left;
+    cursor: default; }
+    #docFoot .footBigWrap .box .btmlist {
+      padding: 49px 0;
+      border-bottom: 1px solid #eaeaea;
+      zoom: 1;
+      text-align: left; }
+      #docFoot .footBigWrap .box .btmlist ul {
+        height: 48px; }
+        #docFoot .footBigWrap .box .btmlist ul li {
+          float: left;
+          width: 233px;
+          margin-left: 42px; }
+          #docFoot .footBigWrap .box .btmlist ul li div {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid #d6d6d6;
+            text-align: center;
+            line-height: 38px;
+            font-size: 20px;
+            font-weight: 700;
+            display: inline-block;
+            float: left;
+            margin-right: 12px; }
+          #docFoot .footBigWrap .box .btmlist ul li strong {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px; }
+          #docFoot .footBigWrap .box .btmlist ul li span {
+            font-size: 14px;
+            line-height: 22px; }
+    #docFoot .footBigWrap .box .guidelist {
+      padding: 45px 0 90px; }
+      #docFoot .footBigWrap .box .guidelist .clearfix .first {
+        float: left;
+        padding-left: 0px;
+        height: 128px;
+        width: 238px;
+        padding-right: 40px; }
+        #docFoot .footBigWrap .box .guidelist .clearfix .first .logokaola {
+          display: block;
+          width: 220px;
+          height: 43px;
+          line-height: 45px;
+          margin-bottom: 20px;
+          outline: none;
+          cursor: pointer;
+          z-index: 9;
+          background: url(../images/nav1.png); }
+        #docFoot .footBigWrap .box .guidelist .clearfix .first .focuson {
+          position: relative;
+          height: 32px;
+          text-align: center;
+          vertical-align: middle;
+          padding-left: 58px; }
+          #docFoot .footBigWrap .box .guidelist .clearfix .first .focuson span {
+            position: absolute;
+            left: 0px;
+            top: 8px; }
+          #docFoot .footBigWrap .box .guidelist .clearfix .first .focuson a {
+            position: relative;
+            margin-left: 10px;
+            cursor: pointer;
+            display: inline-block;
+            verticl-align: middle; }
+            #docFoot .footBigWrap .box .guidelist .clearfix .first .focuson a em {
+              width: 32px;
+              height: 32px;
+              font-size: 32px; }
+      #docFoot .footBigWrap .box .guidelist .clearfix li {
+        float: left;
+        width: 134px;
+        padding: 0 0 0 21px;
+        height: 128px; }
+        #docFoot .footBigWrap .box .guidelist .clearfix li dt {
+          margin: -4px 0 10px; }
+          #docFoot .footBigWrap .box .guidelist .clearfix li dt em {
+            font-size: 18px;
+            font-weight: 400; }
+        #docFoot .footBigWrap .box .guidelist .clearfix li dd {
+          line-height: 29px; }
+          #docFoot .footBigWrap .box .guidelist .clearfix li dd a {
+            color: #333;
+            cursor: pointer; }
+      #docFoot .footBigWrap .box .guidelist .clearfix .last {
+        width: 108px;
+        padding: 0px;
+        margin-left: 10px; }
+        #docFoot .footBigWrap .box .guidelist .clearfix .last img {
+          display: inline-block;
+          margin: 5px 3px 6px; }
+
+#docFoot #aboutNest {
+  position: relative;
+  padding: 30px 0;
+  background: #333333;
+  line-height: 26px;
+  text-align: center;
+  color: #c2c2c2;
+  margin-top: 118px; }
+  #docFoot #aboutNest a {
+    font-size: 14px;
+    color: #c2c2c2; }
+  #docFoot #aboutNest span {
+    margin-left: 20px; }
+  #docFoot #aboutNest .guohuispan {
+    margin-left: 5px; }
+  #docFoot #aboutNest .guohui {
+    display: inline-block;
+    margin-top: 2px; }
+  #docFoot #aboutNest #KXWZ img {
+    margin-top: 5px;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    display: inline-block; }
+  #docFoot #aboutNest .u-shield img {
+    display: inline-block;
+    height: 30px;
+    margin: 5px 0 0 5px;
+    padding-left: 8px; }
